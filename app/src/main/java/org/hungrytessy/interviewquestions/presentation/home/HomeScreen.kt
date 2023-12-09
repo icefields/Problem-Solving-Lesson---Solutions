@@ -18,8 +18,8 @@ fun HomeScreen(
 ) {
     val s1 = "lucitappferu"
     val s2 = "ifluucperpat"
-
     var list1 = listOf<Int>(1,4,2,7,5,6,3,1,1,5,6,7,4,4,4,3,5,1,44,54,12,0,3,0)
+    val n = 5
     Column() {
         Text(
             text = "getMatching ${getMatching(list1)}",
@@ -30,6 +30,11 @@ fun HomeScreen(
             text = "isAnagram ${isAnagram(s1, s2 )}",
             modifier = modifier
         )
+        Text(
+            text = "nQueen problem size: $n  solution: ${solutions.NQueen.nQueen(n)}",
+            modifier = modifier
+        )
+
     }
 
 }
