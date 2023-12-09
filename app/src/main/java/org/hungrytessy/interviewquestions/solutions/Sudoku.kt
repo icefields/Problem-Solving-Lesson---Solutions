@@ -1,4 +1,4 @@
-package solutions
+package org.hungrytessy.interviewquestions.solutions
 
 /**
  * Given an incomplete Sudoku configuration in terms of a 9 x 9  2-D square matrix (grid[][]),

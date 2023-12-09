@@ -6,8 +6,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import solutions.getMatching
-import solutions.isAnagram
+import org.hungrytessy.interviewquestions.solutions.NQueen
+import org.hungrytessy.interviewquestions.solutions.getMatching
+import org.hungrytessy.interviewquestions.solutions.isAnagram
 
 @Composable
 @Destination(start = true)
@@ -31,7 +32,7 @@ fun HomeScreen(
             modifier = modifier
         )
         Text(
-            text = "nQueen problem size: $n  solution: ${solutions.NQueen.nQueen(n)}",
+            text = "nQueen problem size: $n  solution: ${NQueen.nQueen(n)}",
             modifier = modifier
         )
 
