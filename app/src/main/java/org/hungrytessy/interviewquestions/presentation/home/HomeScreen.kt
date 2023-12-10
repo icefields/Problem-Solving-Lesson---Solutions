@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import org.hungrytessy.interviewquestions.presentation.home.components.NQueenBoard
+import org.hungrytessy.interviewquestions.presentation.nqueen.components.NQueenBoard
 import org.hungrytessy.interviewquestions.solutions.NQueen
 import org.hungrytessy.interviewquestions.solutions.getMatching
 import org.hungrytessy.interviewquestions.solutions.isAnagram
