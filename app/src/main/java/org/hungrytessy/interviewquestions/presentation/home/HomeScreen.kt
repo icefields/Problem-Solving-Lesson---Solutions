@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -17,6 +18,7 @@ import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import org.hungrytessy.interviewquestions.presentation.nqueen.components.NQueenBoard
 import org.hungrytessy.interviewquestions.solutions.NQueen
+import org.hungrytessy.interviewquestions.solutions.Sudoku
 import org.hungrytessy.interviewquestions.solutions.getMatching
 import org.hungrytessy.interviewquestions.solutions.isAnagram
 
@@ -36,5 +38,8 @@ fun HomeScreen(
         Text(text = "isAnagram ${isAnagram(s1, s2 )}")
         Divider(modifier = Modifier.height(4.dp))
         Text(text = "nQueen problem size: $n  solution: ${NQueen.nQueen(n)}")
+        Divider(modifier = Modifier.height(4.dp))
+        Text(text = "Validate sudoku board: ${Sudoku().validateBoard()}")
+        Divider(modifier = Modifier.height(4.dp))
     }
 }
